@@ -1,0 +1,24 @@
+{
+    "name": "Chrome Extension Example",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "jspackages/handlebars-v4.0.12.js",
+          "precompiled_temps.js",
+          "jspackages/jquery-3.3.1.min.js",
+          "jspackages/jquery.dom-outline-1.0.js",
+          "content.js"
+        ],
+        "css": ["style.css"]
+      }
+    ],
+    "web_accessible_resources": [
+      "*"
+    ]
+}
